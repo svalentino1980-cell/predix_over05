@@ -1,6 +1,7 @@
 import requests
+import time
 
-TOKEN = "8728645534:AAAEKtUiQ4F2uqZK4RjD-M17qczif64PsAUU"
+TOKEN = "8728645534:AAAEKtUiQ4F2uqZK"
 CHAT_ID = "5735593985"
 
 def send_message(text):
@@ -14,18 +15,16 @@ def send_message(text):
 def main():
 
     message = """
-⚽ MACCO OVER 0.5 HT BOT
+⚽ OVER 0.5 HT BOT
 
 TOP PARTITE OGGI
 
 PSV vs Zwolle → 78%
 Benfica vs Estoril → 81%
-Ajax vs Utrecht → 76%
-
-Solo partite con alta probabilità di gol nel primo tempo
 """
 
     send_message(message)
 
-if __name__ == "__main__":
+while True:
     main()
+    time.sleep(3600)
